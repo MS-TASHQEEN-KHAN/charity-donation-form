@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charity Donation Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <h1>CHARITY DONATION FORM</h1>
+      <form action="#" method="POST">
+        <div class="row">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="text" name="lastName" placeholder="Last Name" required>
+        </div>
+        <div class="row">
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="tel" name="phoneNumber" placeholder="Phone Number" required>
+        </div>
+        <input type="text" name="address" placeholder="Street Address" required>
+        <div class="row">
+          <input type="text" name="city" placeholder="City" required>
+          <input type="text" name="state" placeholder="State" required>
+        </div>
+        <div class="row">
+          <input type="text" name="pinCode" placeholder="Pin code" required>
+          <select name="country" required>
+            <option value="" disabled selected>Select Country</option>
+            <option value="USA">USA</option>
+            <option value="India">India</option>
+            <option value="UK">UK</option>
+            <!-- Add more countries as needed -->
+          </select>
+        </div>
+        <div class="row">
+          <select name="donationType" required>
+            <option value="" disabled selected>Donation Type</option>
+            <option value="money">Money</option>
+            <option value="clothes">Clothes</option>
+            <option value="food">Food</option>
+          </select>
+          <input type="number" name="donationAmount" placeholder="Donation Amount" required>
+        </div>
+        <textarea name="queries" rows="4" placeholder="Any Queries..."></textarea>
+        <button type="submit">SUBMIT</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
